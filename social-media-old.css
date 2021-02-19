@@ -1,0 +1,424 @@
+/*CSS for w3-social-media*/
+/*width:1519*/
+/*height:2006*/
+
+
+/*header:width:2.49252243;*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Open sans, Arial, sans-serif;
+    font-size: 15px;
+    background: #F6F6F6;
+}
+.margin-left-8{
+    margin-left: 8px;
+}
+.margin-right-8{
+    margin-right: 8px;
+    
+}
+.margin-left-16{
+    margin-left: 16px;
+}
+.margin-bottom-15{
+    margin-bottom: 15px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-bottom-25{
+    margin-bottom: 25px;
+}
+
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.clear-fix{
+    content: '';
+    display: block;
+    clear: both;
+}
+.clearfix{
+    clear: both;
+}
+
+.no-padding-top{
+    padding-top: 0;
+}
+
+.no-padding-bottom{
+    padding-bottom: 0;
+}
+
+.box-shadow-AAA{
+    box-shadow: 1px 1px 10px #AAA, -1px -1px 10px #AAA;
+}
+/********************* HEADER ************************/
+
+
+/*MENU*/
+.header-fixed{
+    width: 100%;
+    height: 50px;
+    background: rgba(77,99,111,1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.menu{
+    height: 50px;
+}
+
+.menu-item{
+    display: inline-block;
+    padding: 0 25px;
+    line-height: 50px;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+/*    margin: 0;*/
+}
+.menu-item.first-item{
+    padding: 0 25px;
+    background: #303E45;
+/*    margin: 0;*/
+}
+.menu-item a{
+    color: #FFF;
+}
+
+.menu-item.first-item a span{
+    padding-right: 15px;
+}
+
+.menu-item a:link,
+.menu-item a:visited{
+    text-decoration: none;
+}
+
+
+.menu .menu-item:hover{
+    background: #CCC;
+    color: #000;
+    cursor: pointer;
+}
+
+.menu-item img {
+    height: 25px;
+    border-radius: 50%;
+    padding: 12px 14px;
+}
+
+.menu-item.menu-account{
+    height: 50px;
+    padding: 0 10px;
+}
+.menu-item.menu-account:hover{
+    background: #FFF;
+}
+
+.badge{
+    background: #4CAF50;
+    padding: 2px 8px;
+    font-size: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45px;
+    top: 10px;
+}
+
+.menu-item.last-menu-item{
+    position: relative; 
+}
+
+
+/************* NAV-ICON ******************/
+/*
+.menu-navicon{
+    position: relative;
+}
+*/
+/************** SUB-MENU **********************/
+.sub-menu{
+    background: #FFF;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    box-shadow: 1px 2px 7px 0 #999,-1px 2px 7px 0 #999;   
+    display: none;
+}
+.sub-menu .menu-item a{
+    color: black;
+}
+.sub-menu .menu-item{
+    display: block;
+    color: #000;
+    text-transform: capitalize;
+    height: 35px;
+    line-height: 35px;
+}
+
+.menu-item:hover .sub-menu{
+    display: block;
+}
+
+.menu-navicon:hover{
+    background: #CCC;;
+}
+.menu-item.first-item{
+    position: relative;
+}
+
+/*********** FOR DARK-SUB-MENU *******************/
+.dark-sub-menu{
+    background: rgba(77,99,111,1);
+    position: absolute;
+/*    left: 0;*/
+/*    top: 32px;*/
+    width: 585px;
+/*    box-shadow: 1px 2px 7px 0 #999,-1px 2px 7px 0 #999;   */
+/*    display: none;*/
+}
+.dark-sub-menu .menu-item a{
+    color: black;
+}
+.dark-sub-menu .menu-item{
+    display: block;
+    color: #000;
+    text-transform: capitalize;
+    height: 35px;
+/*    padding: 30px;*/
+    line-height: 35px;
+}
+.menu-item:hover .dark-sub-menu{
+    display: block;
+}
+
+
+#main{
+    margin: 80px 75px 0 75px;
+    width: 100%;
+/*    position: relative;*/
+}
+/******************************** LEFT CONTAINER *********************************/
+.left-container{
+    width: 340px;
+    position: absolute;
+    
+}
+/*********** PROFILE ***************/
+.profile{
+    background: #FFF;
+/*    box-sizing: border-box;*/
+}
+.profile-picture{
+    padding: 0 100px;
+    margin: 0 20px;
+    width: 108px;
+    border-bottom: solid 1px #EEE;
+}
+.profile-picture p{
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 15px;
+    color: rgba(0,0,0,0.8);
+}
+.profile-picture img{
+    width: 107px;
+    border-radius: 50%;
+}
+.personal-details{
+    padding: 15px 10px;
+    list-style-type: none;
+}
+.pd{
+    color: rgba(0,0,0,1);
+    padding: 12px 0;
+    font-size: 18px;
+    font-family: Calibri, sans-serif;
+    font-weight: 400;
+}
+.pd span{
+    font-size: 16px;
+    color: rgba(77,99,111,1);
+    padding-right: 25px;
+    padding-left: 7px;
+}
+
+
+/******************** EVENTS ****************************/
+.events{
+    background: rgba(77,99,111,1);
+    box-sizing: border-box;
+}
+
+.about-events{
+/*    padding: 0 15px;*/
+    list-style-type: none;
+    color: #FFF;
+}
+
+.ae{
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+.ae span{
+    padding: 15px;
+}
+
+.ae:hover{
+    background: #CCC;
+    color: #000;
+}
+
+/******************* INTERESTS *****************************/
+.interests{
+    background: #FFF;
+    box-sizing: border-box;
+    padding: 20px 15px;
+}
+.interest-lead{
+    font-size: 16px;
+    font-weight: 300;
+}
+.p-tag{
+    margin: 10px 2px;
+}
+.tags{
+    padding: 3px 5px;
+    margin: 0 2px;
+}
+.tag-1{
+    background: #303E45;
+}
+.tag-2{
+    background: #3A4B53;
+}
+.tag-3{
+    background: #435761;
+}
+.tag-4{
+    background: #4D636F;
+}
+.tag-5{
+    background: #57707D;
+}
+.tag-6{
+    background: #607D8B;
+}
+.tag-7{
+    background: #7D97A5;
+}
+.tag-8{
+    background: #9EB1BB;
+}
+.tag-9{
+    background: #BECBD2;
+}
+.tag-10{
+    background: #DFE5E8;
+}
+.tag-11{
+    background: #F5F7F8;
+}
+
+/********** MESSAGE **********/
+.message{
+    background: #DFE5E8;
+    border-radius: 10px;
+}
+.message-header{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+    position: relative;
+}
+.message-hey{
+    display: inline-block;
+}
+.message-header .cross-icon{
+    background: #9EB1BB;
+    border-top-right-radius: 10px; 
+    position: absolute;
+    top: 0px;
+    left: 293px;
+    padding: 15px;
+}
+.message-header .cross-icon:hover{
+    background: #CCC;
+}
+
+.message-content{
+    padding: 15px 15px;
+}
+
+/********** MAIN CONTAINER **********/
+.status{
+    background: #FFF;
+}
+
+
+
+
+
+
+/********** FOOTER  ***********************/
+
+#footer{
+    width: 100%;
+    background: #333;
+    color: #FFF;
+    position: absolute;
+    margin-top: 1000px;
+}
+
+.footer-text{
+    font-size: 20px;
+    font-weight: 300;
+    background: #435761;
+    padding: 30px 15px;
+}
+.footer-poweredby{
+    font-size: 18px;
+    font-weight: 400;
+    background: #303E45;
+    padding: 15px 25px;
+}
+/******************** RESIZING Property *************************/
+@media (min-width: 250px) and (max-width: 585px){
+    .menu-item{
+        display: none;
+    }
+    .first-item{
+        display: block;
+    }
+    .menu-navicon{
+        display: block;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .profile{
+        width: 80%;
+    }
+}
+
+
+
+@media (min-width: 586px){
+    .menu-navicon{
+        display: none;
+    }
+    .dark-sub-menu{
+        display: none;
+    }
+}
